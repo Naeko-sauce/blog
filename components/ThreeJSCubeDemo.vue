@@ -5,6 +5,7 @@ import * as THREE from "three";
 
 // 目标：了解three.js最基本的内容, 哥哥不会连这个都不会吧，真是杂~鱼❤️呢~~~
 
+
 const width = 800; // 方块宽度
 const height = 800; // 方块高度
 let angle = 0; // 添加一个角度变量来控制圆周运动
@@ -58,4 +59,6 @@ onMounted(() => {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>

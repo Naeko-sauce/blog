@@ -1,4 +1,4 @@
 ---
-title: zhu
-layout: zhu
+title: 柱状图
 ---
+<zhu />
