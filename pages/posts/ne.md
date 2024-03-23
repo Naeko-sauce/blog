@@ -1,4 +1,0 @@
----
-title: bug
-layout: th
----
