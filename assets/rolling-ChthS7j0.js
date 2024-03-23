@@ -1,0 +1,1 @@
+import{ae as c,af as i}from"./app-gklGRAlV.js";function f(l,e){l.afterEach((o,t)=>{const a=e.getScrollPosition(o.path);o.fullPath!==t.fullPath&&setTimeout(()=>{document.documentElement.scrollTop=a},0)}),l.beforeEach((o,t)=>{o.fullPath!==t.fullPath&&c(()=>{i(document.body,o.hash,{smooth:!0})})})}export{f as toScrollPosition};

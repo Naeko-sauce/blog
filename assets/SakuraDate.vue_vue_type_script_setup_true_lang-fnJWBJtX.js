@@ -1,0 +1,1 @@
+import{d as o,q as n,X as c,o as d,c as r,h as e,t as l}from"./app-gklGRAlV.js";const i=e("dt",{class:"sr-only"}," Published on ",-1),m=["datetime"],h=o({__name:"SakuraDate",props:{date:{}},setup(a){const s=a,t=n(()=>c(s.date||""));return(p,_)=>(d(),r("dl",null,[i,e("dd",null,[e("time",{datetime:t.value},l(t.value),9,m)])]))}});export{h as _};

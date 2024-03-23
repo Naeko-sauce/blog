@@ -1,0 +1,50 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Valaxy Theme Yun",
+    "home_page_url": "https://valaxy.site/",
+    "feed_url": "https://valaxy.site/feed.json",
+    "description": "Valaxy Theme Yun Preview.",
+    "icon": "https://valaxy.site/valaxy-logo.png",
+    "author": {
+        "name": "Naiko",
+        "url": "https://valaxy.site"
+    },
+    "items": [
+        {
+            "id": "",
+            "content_html": "<h3>大风车吱呀吱哟哟地转</h3>\n<ThreeJSCubeDemo />\n",
+            "url": "https://valaxy.site/posts/3D-square-rotation-exercise",
+            "title": "3d方块旋转小练习",
+            "date_modified": "2024-03-23T19:26:36.574Z",
+            "date_published": "2024-03-23T19:26:36.574Z",
+            "author": {
+                "name": "Naiko",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<!-- <div class=\"flex flex-col\">\n\n<div class=\"flex grid-cols-3\">\n  <div>\n\n  ![image](https://yunyouj",
+            "url": "https://valaxy.site/posts/hello-valaxy",
+            "title": "Hello, Valaxy!",
+            "date_modified": "2024-03-23T19:26:36.574Z",
+            "date_published": "2024-03-23T19:26:36.574Z",
+            "author": {
+                "name": "Naiko",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "",
+            "url": "https://valaxy.site/posts/zhu",
+            "title": "zhu",
+            "date_modified": "2024-03-23T19:26:36.574Z",
+            "date_published": "2024-03-23T19:26:36.574Z",
+            "author": {
+                "name": "Naiko",
+                "url": "https://valaxy.site"
+            }
+        }
+    ]
+}
