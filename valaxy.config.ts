@@ -1,5 +1,5 @@
 import { defineValaxyConfig } from 'valaxy'
-import type { ThemeUserConfig } from 'valaxy-theme-sakura'
+import type { UserThemeConfig } from 'valaxy-theme-yun'
 
 // add icons what you will need
 const safelist = [
@@ -9,27 +9,19 @@ const safelist = [
 /**
  * User Config
  */
-export default defineValaxyConfig<ThemeUserConfig>({
+export default defineValaxyConfig<UserThemeConfig>({
   // site config see site.config.ts
 
   theme: 'sakura',
 
   themeConfig: {
-
-
     banner: {
-      title: '',
-      motto: '',
-      urls: [
-        'https://wrxinyue-images.s3.bitiful.net/pc-wallpaper/optimize/cGZ4kz2q.webp',
-        'https://wrxinyue-images.s3.bitiful.net/wallpaper/Genshin Impact - Yae Miko (4) Cybust PC.mp4',
-        'https://wrxinyue-images.s3.bitiful.net/pc-wallpaper/wallhaven-yxwy7k.jpg',
-      ],
-      style: '',
-      overlayBar: true,
+      enable: true,
+      title: 'Naiko',
+      cloud: {
+        enable: true,
+      },
     },
-    sidebarShowOnPC:true,
-    sidebarPushMode:true,
 
     pages: [
       {
@@ -46,7 +38,13 @@ export default defineValaxyConfig<ThemeUserConfig>({
       },
     ],
 
-
+    footer: {
+      since: 2016,
+      beian: {
+        enable: true,
+        icp: '苏ICP备17038157号',
+      },
+    },
   },
 
   unocss: { safelist },
