@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { onMounted } from "vue";
 import * as THREE from 'three'
-// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 onMounted(() => {
 
 const scene = new THREE.Scene()
@@ -38,7 +38,7 @@ scene.add(pointLight, ambientLight);
 const gr = new THREE.GridHelper(200, 50);
 scene.add(gr);
 
-// const con  = new OrbitControls(camera,renderer.domElement)
+const con  = new OrbitControls(camera,renderer.domElement)
 function addStar() {
   const geometry = new THREE.SphereGeometry(0.25, 24, 24);
   const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
@@ -61,7 +61,8 @@ requestAnimationFrame(am)
 // torus.rotation.x += 0.1;
 torus.rotation.y += 0.05;
 // torus.rotation.z += 0.1;
-// con.update
+con.update()
+
 renderer.render(scene,camera)
 }
 am()
