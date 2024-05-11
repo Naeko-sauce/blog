@@ -1,8 +1,9 @@
 <script lang="ts" setup>
 import { onMounted } from "vue";
 import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 onMounted(() => {
+
 const scene = new THREE.Scene()
 const  w = 1000
 const h = 1000
@@ -23,7 +24,7 @@ const geometry = new THREE.TorusGeometry(10,3,16,100)
 const material = new THREE.MeshBasicMaterial({color:0xFF6347})
 const torus = new THREE.Mesh(geometry,material)
 scene.add(torus)
-const cl = new OrbitControls(camera,renderer.domElement)
+// const cl = new OrbitControls(camera,renderer.domElement)
 //创建光源
 const pointLight = new THREE.PointLight(0xffffff, 1);
 pointLight.position.set(5, 5, 5);
