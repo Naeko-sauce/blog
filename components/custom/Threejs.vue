@@ -68,11 +68,9 @@ am()
 })
 </script>
 <template>
-
-  <div id="bg">
-
-  </div>
-
+<div class="flex justify-center">
+  <div id="bg" />
+</div>
 </template>
 
 <style scoped>
