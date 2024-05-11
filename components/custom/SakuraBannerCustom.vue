@@ -5,7 +5,7 @@ onMounted(() => {
 const scene = new THREE.Scene()
 
 // 创建透视相机，他的设计是模仿人眼看到的
-const camera = new THREE.PerspectiveCamera(75,window.innerHeight / window.innerWidth,0.1,1000)
+const camera = new THREE.PerspectiveCamera(75,16 / 9,0.1,1000)
 //设置渲染器
 const renderer = new THREE.WebGLRenderer({
   antialias:true,alpha:true
