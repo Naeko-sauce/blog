@@ -1,5 +1,7 @@
 import { defineValaxyConfig } from 'valaxy'
-import type { UserThemeConfig } from 'valaxy-theme-yun'
+import type { UserThemeConfig } from 'valaxy-theme-sakura'
+import { addonLive2d } from 'valaxy-addon-live2d'
+import { addonMeting } from 'valaxy-addon-meting'
 
 // add icons what you will need
 const safelist = [
@@ -16,11 +18,8 @@ export default defineValaxyConfig<UserThemeConfig>({
 
   themeConfig: {
     banner: {
-      enable: true,
+      urls: "https://wrxinyue-images.s3.bitiful.net/pc-wallpaper/wallhaven-pkxlv3.jpg",
       title: 'Naiko',
-      cloud: {
-        enable: true,
-      },
     },
 
     pages: [
@@ -48,4 +47,20 @@ export default defineValaxyConfig<UserThemeConfig>({
   },
 
   unocss: { safelist },
+
+  addons: [
+    addonLive2d({
+      live2dPath: {
+        baseUrl: 'online'
+      }
+    }),
+    addonMeting({
+      global: true,
+      props: {
+        id: '2049540645',
+        server: 'netease',
+        type: 'song',
+      },
+    })
+  ]
 })
