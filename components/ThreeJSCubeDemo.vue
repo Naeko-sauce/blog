@@ -1,19 +1,29 @@
 <script lang="ts" setup>
 import { onMounted } from "vue";
+import { useWindowSize } from '@vueuse/core' // Vue 工具集，封装了很多的常用方法
 
 import * as THREE from "three";
 
 // 目标：了解three.js最基本的内容, 哥哥不会连这个都不会吧，真是杂~鱼❤️呢~~~
 
 
+// 在Vue环境不推荐直接使用window方法get窗口大小哦
+// const width = window.innerWidth; // 方块宽度
+// const height = window.innerHeight; // 方块高度
+
+// 改为
+// const window = useWindowSize()
+// const width = window.width
+// const height = window.height
+
+// 可以简写为
+const {width, height} = useWindowSize() // 解构, 因为内容是ref对象所以要.value获取对象的值
+
 let angle = 0; // 添加一个角度变量来控制圆周运动
 
 onMounted(() => {
-
-const width = window.innerWidth; // 方块宽度
-const height = window.innerHeight; // 方块高度
   const scene = new THREE.Scene(); // 创建场景
-  const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000); // 创建相机
+  const camera = new THREE.PerspectiveCamera(75, width.value / height.value, 0.1, 1000); // 创建相机
 
   camera.position.set(0, 0, 10); // 设置相机位置
   scene.add(camera);
@@ -24,7 +34,7 @@ const height = window.innerHeight; // 方块高度
   scene.add(cube); // 将几何体添加到场景中
 
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); // 初始化渲染器
-  renderer.setSize(width, height); // 设置渲染的尺寸大小
+  renderer.setSize(width.value, height.value); // 设置渲染的尺寸大小
   renderer.autoClear = false; // 禁用自动清除
   renderer.setClearAlpha(0.1); // 设置清除的透明度，用于控制残影的持续性
 
@@ -54,6 +64,7 @@ const height = window.innerHeight; // 方块高度
   animateCube();
 });
 </script>
+
 <template>
   <div class="flex justify-center">
     <div id="three-js-container" />
@@ -61,5 +72,4 @@ const height = window.innerHeight; // 方块高度
 </template>
 
 <style scoped>
-
 </style>
