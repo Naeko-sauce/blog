@@ -6,11 +6,12 @@ import * as THREE from "three";
 // 目标：了解three.js最基本的内容, 哥哥不会连这个都不会吧，真是杂~鱼❤️呢~~~
 
 
-const width = window.innerWidth; // 方块宽度
-const height = window.innerHeight; // 方块高度
 let angle = 0; // 添加一个角度变量来控制圆周运动
 
 onMounted(() => {
+
+const width = window.innerWidth; // 方块宽度
+const height = window.innerHeight; // 方块高度
   const scene = new THREE.Scene(); // 创建场景
   const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000); // 创建相机
 
