@@ -10,8 +10,8 @@ import { OrbitControls } from '@tresjs/cientos'
 
     <OrbitControls :target="[0,0,0,0]" :max-polar-angle="1.45" :enable-zoom="false"/>
     <Suspense>
-      <Car />
-      <!-- <Cars /> -->
+      <!-- <Car /> -->
+      <Cars />
     </Suspense>
     <Suspense>
     <Ground />

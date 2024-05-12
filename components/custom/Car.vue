@@ -6,7 +6,7 @@
 import { useGLTF } from '@tresjs/cientos'
 import { useRenderLoop, useTexture } from '@tresjs/core'
 import * as THREE from 'three'
-const { scene } = await useGLTF('/modl/scene.gltf', { draco: true })
+const { scene } = await useGLTF('/models/car/scene.gltf', { draco: true })
 
 scene.scale.set(0.005, 0.005, 0.005)
 // console.log(scene)
@@ -18,6 +18,7 @@ scene.scale.set(0.005, 0.005, 0.005)
 //   }
 // })
 const { onLoop } = useRenderLoop()
+console.log(scene);
 
 onLoop(({ elapsed }) => {
   // 将在每一帧运行 ~ 60FPS（取决于您的显示器）
