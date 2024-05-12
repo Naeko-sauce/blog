@@ -1,18 +1,17 @@
 <script setup lang="ts">
 import { TresCanvas } from '@tresjs/core';
-import {OrbitControls} from '@tresjs/cientos'
+import { OrbitControls } from '@tresjs/cientos'
 </script>
 
 <template>
   <div class="e">
-  <TresCanvas clear-color="#82DBC5" >
-    <TresPerspectiveCamera/>
+  <TresCanvas  >
+    <TresPerspectiveCamera :fov='50'/>
     <OrbitControls />
-    <TresMesh>
-      <TresTorusGeometry :args="[1, 0.5, 16, 32]" />
-      <TresMeshBasicMaterial color="orange" />
-    </TresMesh>
-    <TresAmbientLight :intensity="1" />
+    <Suspense>
+      <Car />
+    </Suspense>
+    <TresAmbientLight :intensity="2" color="#ffffff" />
   </TresCanvas>
 </div>
 </template>

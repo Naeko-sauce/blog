@@ -12,10 +12,10 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@tresjs/cientos": "^3.9.0",
     "@tresjs/core": "^3.9.0",
+    "@tresjs/cientos": "^3.8.0",
     "gsap": "^3.12.5",
-    "three": "^0.164.1",
+    "three": "^0.163.0",
     "valaxy": "0.18.6",
     "valaxy-addon-live2d": "^0.0.5",
     "valaxy-addon-meting": "^0.1.1",
@@ -23,6 +23,7 @@
     "valaxy-theme-yun": "0.18.6"
   },
   "devDependencies": {
+    "@tresjs/leches": "^0.14.0",
     "@types/three": "^0.164.0",
     "typescript": "^5.4.5"
   }
