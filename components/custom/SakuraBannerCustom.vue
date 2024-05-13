@@ -23,7 +23,7 @@ import { OrbitControls } from '@tresjs/cientos'
 
 
     <TresSpotLight
-    :color='[2,0.25,0.7]'
+
     :intensity="250"
     :angle="0.6"
     :penumbra="0.5"
@@ -31,7 +31,7 @@ import { OrbitControls } from '@tresjs/cientos'
     :position='[5,5,0]'
     />
     <TresSpotLight
-    :color='[0.1,0.5,0.7]'
+
     :intensity="400"
     :angle="0.6"
     :penumbra="0.5"
