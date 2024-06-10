@@ -27,8 +27,8 @@ dependencies:
     specifier: ^0.1.1
     version: 0.1.2
   valaxy-theme-sakura:
-    specifier: ^0.5.5
-    version: 0.5.5
+    specifier: ^0.6.0
+    version: 0.6.0
   valaxy-theme-yun:
     specifier: 0.18.6
     version: 0.18.6
@@ -4682,10 +4682,6 @@ packages:
       mime-types: 2.1.35
     dev: false
 
-  /typed.js@2.1.0:
-    resolution: {integrity: sha512-bDuXEf7YcaKN4g08NMTUM6G90XU25CK3bh6U0THC/Mod/QPKlEt9g/EjvbYB8x2Qwr2p6J6I3NrsoYaVnY6wsQ==}
-    dev: false
-
   /typescript@5.4.5:
     resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
     engines: {node: '>=14.17'}
@@ -4930,13 +4926,20 @@ packages:
     resolution: {integrity: sha512-nps69kRXHsjhQyWp1Ot6oOLkyk4O6f/WwKHVumZABuVqt+LIsXxBCHCBTtTAOsq0dgk3vvisAn0WQ7EOAfX1OA==}
     dev: false
 
-  /valaxy-theme-sakura@0.5.5:
-    resolution: {integrity: sha512-MkazvjKCas/++mP4es8IMNWYyqC23Lrl7kYuPTPeaq3cLCah28XKNGQBLUV6DC2Ie0JEpAhYS03gPh9JEq0ZKA==}
+  /valaxy-theme-sakura@0.6.0:
+    resolution: {integrity: sha512-7wLtvn/6h1Gwa783IR/UFlWnj9dUtadNb/QIQZzJ5gsJjFthCiYOTH04HcQ9M4q8tFMPU0tziR0UBsDTAQvysA==}
+    peerDependencies:
+      d3-force: ^3.0.0
+      typed.js: ^2.1.0
+    peerDependenciesMeta:
+      d3-force:
+        optional: true
+      typed.js:
+        optional: true
     dependencies:
       '@iconify-json/fa6-solid': 1.1.21
       '@iconify-json/mdi': 1.1.66
       '@studio-freight/lenis': 1.0.42
-      typed.js: 2.1.0
     dev: false
 
   /valaxy-theme-yun@0.18.6:
