@@ -1,0 +1,1 @@
+import{d as o,a2 as n,a1 as c,o as d,c as r,j as e,R as l}from"./app-DPK5MmX3.js";const i=e("dt",{class:"sr-only"}," Published on ",-1),m=["datetime"],f=o({__name:"SakuraDate",props:{date:{}},setup(a){const s=a,t=n(()=>c(s.date||""));return(p,_)=>(d(),r("dl",null,[i,e("dd",null,[e("time",{datetime:t.value},l(t.value),9,m)])]))}});export{f as _};

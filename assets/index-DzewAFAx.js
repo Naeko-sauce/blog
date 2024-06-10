@@ -1,0 +1,1 @@
+import{b as e}from"./route-block-B_A1xBdJ.js";import{_ as c,o as t,c as n}from"./app-DPK5MmX3.js";const o={};function r(f,s){return t(),n("div")}typeof e=="function"&&e(o);const i=c(o,[["render",r]]);export{i as default};

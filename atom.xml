@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://valaxy.site/</id>
+    <title>naiko</title>
+    <updated>2024-06-10T14:46:12.509Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>Naiko</name>
+        <email>i@valaxy.site</email>
+        <uri>https://valaxy.site</uri>
+    </author>
+    <link rel="alternate" href="https://valaxy.site/"/>
+    <link rel="self" href="https://valaxy.site/atom.xml"/>
+    <logo>https://valaxy.site/public/pwa-192x192.png</logo>
+    <icon>https://valaxy.site/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2024 © Naiko</rights>
+    <entry>
+        <title type="html"><![CDATA[3d方块旋转小练习]]></title>
+        <id>https://valaxy.site/posts/3D-square-rotation-exercise</id>
+        <link href="https://valaxy.site/posts/3D-square-rotation-exercise"/>
+        <updated>2024-06-10T14:45:05.558Z</updated>
+        <content type="html"><![CDATA[<h3>大风车吱呀吱哟哟地转</h3>
+<ThreeJSCubeDemo />
+]]></content>
+        <author>
+            <name>Naiko</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-06-10T14:45:05.558Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[什么都没有如果看到的是空白那就是模型在加载]]></title>
+        <id>https://valaxy.site/posts/che</id>
+        <link href="https://valaxy.site/posts/che"/>
+        <updated>2024-06-10T14:45:05.558Z</updated>
+        <author>
+            <name>Naiko</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-06-10T14:45:05.558Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello, Valaxy!]]></title>
+        <id>https://valaxy.site/posts/hello-valaxy</id>
+        <link href="https://valaxy.site/posts/hello-valaxy"/>
+        <updated>2024-06-10T14:45:05.558Z</updated>
+        <content type="html"><![CDATA[<p>///saaasasasasdasd<br>
+sadasdasd</p>
+]]></content>
+        <author>
+            <name>Naiko</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-06-10T14:45:05.558Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[太空中的甜甜圈]]></title>
+        <id>https://valaxy.site/posts/zhu</id>
+        <link href="https://valaxy.site/posts/zhu"/>
+        <updated>2024-06-10T14:45:05.558Z</updated>
+        <content type="html"><![CDATA[<Threejs/>
+]]></content>
+        <author>
+            <name>Naiko</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-06-10T14:45:05.558Z</published>
+    </entry>
+</feed>

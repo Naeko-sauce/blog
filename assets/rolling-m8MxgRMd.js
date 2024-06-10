@@ -1,0 +1,1 @@
+import{X as e,Y as c}from"./app-DPK5MmX3.js";function i(l,a){l.afterEach((o,t)=>{const s=a.getScrollPosition(o.path);o.fullPath!==t.fullPath&&!o.hash&&e(()=>{setTimeout(()=>{document.documentElement.scrollTop=s},0)})}),l.beforeEach((o,t)=>{o.fullPath!==t.fullPath&&e(()=>{c(document.body,o.hash,{smooth:!0})})})}export{i as toScrollPosition};
