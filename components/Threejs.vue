@@ -88,8 +88,7 @@ am()
 </template>
 
 <style scoped>
-.a{
+canvas
 
-}
 </style>
 
