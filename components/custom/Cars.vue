@@ -8,7 +8,7 @@ import { useGLTF } from '@tresjs/cientos'
 import { useRenderLoop, useTexture } from '@tresjs/core'
 await nextTick()
 
-const { scene } = await useGLTF('/models/car2/scene.gltf', { draco: true })
+const { scene } = await useGLTF('https://modls.s3.bitiful.net/car2/scene.gltf', { draco: true })
 scene.scale.set(100, 100, 100)
 const { onLoop } = useRenderLoop()
 console.log(scene);

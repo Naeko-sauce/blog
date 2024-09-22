@@ -6,7 +6,7 @@
 import { ref } from 'vue'
 import { useAnimations, useGLTF } from '@tresjs/cientos'
 
-const { scene, animations } = await useGLTF('/models/angel/scene.gltf')
+const { scene, animations } = await useGLTF('https://modls.s3.bitiful.net/angel/scene.gltf')
 scene.scale.set(100, 100, 100)
 
 // const { scene, animations } = await useGLTF(
