@@ -1,0 +1,1 @@
+import{n as a,a2 as c}from"./app-DHTlVhQf.js";function i(l,e){l.afterEach((o,t)=>{const s=e.getScrollPosition(o.path);o.fullPath!==t.fullPath&&!o.hash&&a(()=>{setTimeout(()=>{document.documentElement.scrollTop=s},0)})}),l.beforeEach((o,t)=>{o.fullPath!==t.fullPath&&a(()=>{c(document.body,o.hash,{smooth:!0})})})}export{i as toScrollPosition};

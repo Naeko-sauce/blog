@@ -1,0 +1,73 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "naiko",
+    "home_page_url": "https://valaxy.site/",
+    "feed_url": "https://valaxy.site/feed.json",
+    "icon": "https://valaxy.site/public/pwa-192x192.png",
+    "author": {
+        "name": "Naiko",
+        "url": "https://valaxy.site"
+    },
+    "items": [
+        {
+            "id": "",
+            "content_html": "<h3>大风车吱呀吱哟哟地转</h3>\n<ThreeJSCubeDemo />\n",
+            "url": "https://valaxy.site/posts/3D-square-rotation-exercise",
+            "title": "3d方块旋转小练习",
+            "date_modified": "2024-09-25T22:46:02.199Z",
+            "date_published": "2024-09-25T22:46:02.199Z",
+            "author": {
+                "name": "Naiko",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<Carwan />\n",
+            "url": "https://valaxy.site/posts/che",
+            "title": "车",
+            "date_modified": "2024-09-25T22:46:02.199Z",
+            "date_published": "2024-09-25T22:46:02.199Z",
+            "author": {
+                "name": "Naiko",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>///saaasasasasdasd<br>\nsadasdasd</p>\n",
+            "url": "https://valaxy.site/posts/hello-valaxy",
+            "title": "Hello, Valaxy!",
+            "date_modified": "2024-09-25T22:46:02.199Z",
+            "date_published": "2024-09-25T22:46:02.199Z",
+            "author": {
+                "name": "Naiko",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<minesweeper/>\n",
+            "url": "https://valaxy.site/posts/n",
+            "title": "扫地机",
+            "date_modified": "2024-09-25T22:46:02.199Z",
+            "date_published": "2024-09-25T22:46:02.199Z",
+            "author": {
+                "name": "Naiko",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<Threejs/>\n",
+            "url": "https://valaxy.site/posts/zhu",
+            "title": "太空中的甜甜圈",
+            "date_modified": "2024-09-25T22:46:02.199Z",
+            "date_published": "2024-09-25T22:46:02.199Z",
+            "author": {
+                "name": "Naiko",
+                "url": "https://valaxy.site"
+            }
+        }
+    ]
+}
