@@ -17,11 +17,11 @@ onMounted(() => {
     event.preventDefault();
 
     // 计算新的缩放比例
-    const delta = event.deltaY > 0 ? -0.1 : 0.1; // 根据滚轮方向调整缩放大小
-    scale.value = Math.max(0.1, scale.value + delta); // 缩放限制最小值为0.1
+    // const delta = event.deltaY > 0 ? -0.1 : 0.1; // 根据滚轮方向调整缩放大小
+    // scale.value = Math.max(0.1, scale.value + delta); // 缩放限制最小值为0.1
 
     // 应用缩放变换
-    container.style.transform = `scale(${scale.value})`;
+    // container.style.transform = `scale(${scale.value})`;
   }
 });
 

@@ -29,6 +29,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/3D-square-rotation-exercise': RouteRecordInfo<'/posts/3D-square-rotation-exercise', '/posts/3D-square-rotation-exercise', Record<never, never>, Record<never, never>>,
     '/posts/che': RouteRecordInfo<'/posts/che', '/posts/che', Record<never, never>, Record<never, never>>,
     '/posts/hello-valaxy': RouteRecordInfo<'/posts/hello-valaxy', '/posts/hello-valaxy', Record<never, never>, Record<never, never>>,
+    '/posts/n': RouteRecordInfo<'/posts/n', '/posts/n', Record<never, never>, Record<never, never>>,
     '/posts/zhu': RouteRecordInfo<'/posts/zhu', '/posts/zhu', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
   }
