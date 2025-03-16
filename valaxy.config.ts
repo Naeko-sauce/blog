@@ -1,4 +1,4 @@
-import type { UserThemeConfig } from 'valaxy-theme-sakura'
+import type { ThemeConfig } from 'valaxy-theme-sakura'
 import { defineValaxyConfig } from 'valaxy'
 
 // add icons what you will need
@@ -9,7 +9,7 @@ const safelist = [
 /**
  * User Config
  */
-export default defineValaxyConfig<UserThemeConfig>({
+export default defineValaxyConfig<ThemeConfig>({
   // site config see site.config.ts
 
   theme: 'sakura',
