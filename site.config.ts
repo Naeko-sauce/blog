@@ -1,13 +1,17 @@
 import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
-  url: '',
   lang: 'zh-CN',
-  title: 'nai',
+  title: 'naiko',
+  url: '',
   author: {
     name: 'naiko',
+    avatar: 'https://modls.s3.bitiful.net/img%2F%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250317005012.jpg',
   },
-  description: 'nai',
+  favicon: 'https://modls.s3.bitiful.net/img%2F%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250317005012.jpg',
+  description: '2',
+  subtitle: '1',
+ 
   // social: [
   //   {
   //     name: 'RSS',
@@ -105,4 +109,5 @@ export default defineSiteConfig({
       },
     ],
   },
+  
 })

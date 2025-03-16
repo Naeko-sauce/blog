@@ -13,8 +13,9 @@ export default defineValaxyConfig<ThemeConfig>({
   // site config see site.config.ts
 
   theme: 'sakura',
-
+ 
   themeConfig: {
+    
     
     ui: {
       primary: '#ff4e6a',
@@ -29,6 +30,7 @@ export default defineValaxyConfig<ThemeConfig>({
       ],
       style: 'filter-dim',
     },
-  
+    
   },
+  
 })
