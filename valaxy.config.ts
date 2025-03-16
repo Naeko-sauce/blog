@@ -21,7 +21,7 @@ export default defineValaxyConfig<ThemeConfig>({
     },
 
     hero: {
-      title: 'Hello, naiko',
+      title: 'Hello',
       motto: 'blog',
       urls: [
         'https://wrxinyue-images.s3.bitiful.net/wallpaper/Genshin Impact - Yae Miko (4) Cybust PC.mp4',
