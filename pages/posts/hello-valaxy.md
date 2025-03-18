@@ -1,4 +1,5 @@
 ---
+top: 2
 title: 芝士半成品扫雷
 cover: https://modls.s3.bitiful.net/img%2F%E6%94%B6%E8%97%8F%E9%87%8F2860%E7%94%BB%E5%B8%88%E7%94%BB%E5%B8%88JW%E4%BD%9C%E5%93%8180297959_p0.jpg
 ---
