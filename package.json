@@ -20,6 +20,9 @@
     "valaxy-theme-yun": "0.22.16"
   },
   "devDependencies": {
-    "typescript": "^5.8.2"
+    "@intlify/bundle-utils": "10.0.1",
+    "@intlify/message-compiler": "9.2.2",
+    "typescript": "^5.8.2",
+    "vue-i18n": "9.2.2"
   }
 }
