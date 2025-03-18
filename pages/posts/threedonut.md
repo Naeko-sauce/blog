@@ -1,5 +1,5 @@
 ---
-title: 抽象艺术
+title: 抽象天体
 cover: https://modls.s3.bitiful.net/img%2F%E6%94%B6%E8%97%8F%E9%87%8F3336%E7%94%BB%E5%B8%88%E3%81%82%E3%81%8D%E3%81%BE%E4%BD%9C%E5%93%8164013673_p0.png
 ---
 <donut/>
