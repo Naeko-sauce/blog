@@ -25,8 +25,10 @@ onMounted(() => {
    * - h: 渲染高度
    * 这些值会影响渲染分辨率和场景比例
    */
-  const w = 800
-  const h = 800
+  // 设置渲染尺寸
+  const isMobile = window.innerWidth <= 768  // 检测是否为移动端
+  const w = isMobile ? window.innerWidth * 0.9 : 800  // 移动端使用90%屏幕宽度
+  const h = isMobile ? window.innerWidth * 0.9 : 800  // 保持正方形比例
 
   /**
    * 创建透视相机(PerspectiveCamera)
@@ -237,25 +239,16 @@ controls.autoRotateSpeed = 5;
 <div class="flex justify-center">
   <div id="bg" />
 </div>
+
 </template>
 
 <style scoped>
+
 /* 预留的样式空间 */
 .a {
 
 }
-#bg {
-  touch-action: none;  /* 禁用默认触摸行为 */
-  height: 50vh;      /* 使用视口高度 */
-  max-height: 600px;  /* 设置最大高度 */
-  /* overflow: hidden;   防止内容溢出 */
-}
 
-/* 在移动端适配 */
-@media (max-width: 768px) {
-  #bg {
-    height: 60vh;    /* 移动端使用60%视口高度 */
-  }
-}
+
 </style>
 
