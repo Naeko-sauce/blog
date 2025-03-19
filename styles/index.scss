@@ -1,1 +1,10 @@
-// you can custom css here
+.prose {
+ 
+  
+    ul > li::before {
+      content: none;
+    }
+  
+ 
+  }
+
