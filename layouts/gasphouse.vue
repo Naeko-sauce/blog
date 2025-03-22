@@ -12,32 +12,64 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
  * 该函数通过 fetch API 获取 SVG 文件内容，然后将其添加到 DOM 中
  */
 function loadSvg(){
-  // 使用 fetch API 获取 SVG 文件
-  fetch('/city.svg')
-  // 将响应转换为文本格式
-  .then((Response) => {return Response.text()})
-  // 处理获取到的 SVG 文本内容
-  .then((svg)=>{
-    // 获取用于放置 SVG 的容器元素
-    const bgCity = document.getElementById('bg_city');
-    if(bgCity){
-      // 将 SVG 内容插入到容器中
-      bgCity.innerHTML = svg;
-      // 获取插入后的 SVG 元素
-      const bgSvg = document.querySelector('#bg_city svg') as SVGElement;
-      if(bgSvg){
-        // 设置 SVG 的基础属性
-        // 设置宽度为 100%，使其填充父容器
-        bgSvg.setAttribute("width", "100%");
-        // 设置高度为 100%，使其填充父容器
-        bgSvg.setAttribute("height", "100%");
-        // 设置宽高比保持方式，确保 SVG 内容居中且保持比例
-        bgSvg.setAttribute("preserveAspectRatio", "xMidYMid meet");
-        // 以下代码被注释掉，原本用于设置 SVG 的视口
-        // bgSvg.setAttribute("viewBox", "0 0 1920 1080");
+  return new Promise((resolve, reject) => {
+    // 使用 fetch API 获取 SVG 文件
+    fetch('/city.svg')
+    // 将响应转换为文本格式
+    .then((Response) => {
+      if (!Response.ok) {
+        throw new Error(`SVG 加载失败: ${Response.status}`);
       }
-    }
-  })}
+      return Response.text();
+    })
+    // 处理获取到的 SVG 文本内容
+    .then((svg)=>{
+      // 获取用于放置 SVG 的容器元素
+      const bgCity = document.getElementById('bg_city');
+      if(bgCity){
+        // 将 SVG 内容插入到容器中
+        bgCity.innerHTML = svg;
+        // 获取插入后的 SVG 元素
+        const bgSvg = document.querySelector('#bg_city svg') as SVGElement;
+        if(bgSvg){
+          // 设置 SVG 的基础属性
+          bgSvg.setAttribute("width", "100%");
+          bgSvg.setAttribute("height", "100%");
+          bgSvg.setAttribute("preserveAspectRatio", "xMidYMid meet");
+          console.log("SVG 加载成功");
+          resolve(true);
+        } else {
+          reject("SVG 元素未找到");
+        }
+      } else {
+        reject("bg_city 容器未找到");
+      }
+    })
+    .catch(error => {
+      console.error("SVG 加载错误:", error);
+      reject(error);
+    });
+  });
+}
+
+/**
+ * 组件挂载完成后执行的函数
+ * 在 DOM 准备好后加载 SVG 并设置动画
+ */
+onMounted(() => {
+  // 调用加载 SVG 的函数，并等待加载完成
+  loadSvg()
+    .then(() => {
+      console.log("SVG 加载完成，开始设置动画");
+      // 增加延迟，确保 DOM 完全更新
+      setTimeout(() => {
+        setAnimationScroll();
+      }, 500);
+    })
+    .catch(error => {
+      console.error("无法设置动画:", error);
+    });
+});
 
 /**
  * 设置滚动触发的动画序列
@@ -134,22 +166,6 @@ function setAnimationScroll(){
     })
   ]);
 }
-
-/**
- * 组件挂载完成后执行的函数
- * 在 DOM 准备好后加载 SVG 并设置动画
- */
-onMounted(() => {
-  // 调用加载 SVG 的函数
-  loadSvg();
-  
-  // 设置延时器，等待 SVG 加载完成后执行动画
-  // 延迟 100 毫秒是为了确保 DOM 已经完成更新
-  setTimeout(() => {
-    // 调用动画设置函数
-    setAnimationScroll();
-  }, 100);
-});
 
 // 以下注释说明了之前的代码问题
 // 移除了自调用的代码，避免无限递归
