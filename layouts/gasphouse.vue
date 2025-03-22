@@ -34,7 +34,7 @@ function loadSvg(){
         if(bgSvg){
           // 设置 SVG 的基础属性
           bgSvg.setAttribute("width", "100%");
-          bgSvg.setAttribute("height", "100%");
+          bgSvg.setAttribute("height", "100vh");
           bgSvg.setAttribute("preserveAspectRatio", "xMidYMid meet");
           console.log("SVG 加载成功");
           resolve(true);
